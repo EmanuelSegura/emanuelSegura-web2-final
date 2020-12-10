@@ -1,0 +1,25 @@
+// 3A y 3C. API REST. 
+
+ Tendremos un ApiModel donde La informacion de la Nacion sera consumida desde la api rest 
+ . El municipio tendra su model propio donde ira llenando los datos de sus centros de salud. 
+ En base a esa info trabajaran entrelazandose entre si para seguir escalando el proyecto.
+ Como ingrediente principal, la api rest y construir los requisitos locales a raiz de ello mostrando
+ la informacion necesaria. Con MVC se podra seguir trabajando individualmente en cada uno de estos apartados,
+ la descentralizacion que permite este patron de diseño es clave y marida perfectamente con una API REST.
+ ya que los modelos, vistas, controladores tienen sus funciones especificas
+ y no conocen de donde llegan los datos que iran a procesar y mostrar en pantalla. 
+ Ya sea una API rest, o un server propio.
+
+
+endpoints
+
+'lotes:/ID','GET','ApiController', 'get')
+    api/salud/get/:ID
+
+'lotes/usados:/ID','UPDATE','ApiController', 'updateEstadoLote')
+    api/lotes/usados/:ID
+
+'lotes:/ID','GET','ApiController', 'getDisponibles')
+    api/salud/getDisponibles/
+
+
